@@ -1,0 +1,742 @@
+{
+  "intents": [
+    {
+      "intent": "Thank_You",
+      "examples": [
+        {
+          "text": "completed"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "End"
+        },
+        {
+          "text": "Gracias"
+        },
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "Thanks for using assistance"
+        },
+        {
+          "text": "Good bye"
+        },
+        {
+          "text": "Thank"
+        },
+        {
+          "text": "Ok"
+        },
+        {
+          "text": "Nice"
+        },
+        {
+          "text": "Good"
+        },
+        {
+          "text": "Its okay"
+        },
+        {
+          "text": "Done"
+        },
+        {
+          "text": "Bye"
+        }
+      ],
+      "description": "Thanks the Customer"
+    },
+    {
+      "intent": "Book_appointment",
+      "examples": [
+        {
+          "text": "Could you connect me to your agent?"
+        },
+        {
+          "text": "Could you arrange a face to face meeting with your service agent?"
+        },
+        {
+          "text": "Can you transfer my call to your technician?"
+        },
+        {
+          "text": "I want to meet your agent. Can I?"
+        },
+        {
+          "text": "Can I take your agent's help?"
+        },
+        {
+          "text": "Can I speak with your operator?"
+        },
+        {
+          "text": "Can I speak speak to your advisor?"
+        },
+        {
+          "text": "Can I meet your manager for information?"
+        },
+        {
+          "text": "Could you connect me to your representative?"
+        },
+        {
+          "text": "Can you make an appointment?"
+        }
+      ],
+      "description": "To book appointment with an agent"
+    },
+    {
+      "intent": "Store_location",
+      "examples": [
+        {
+          "text": "Directions for store?"
+        },
+        {
+          "text": "Where is store located?"
+        },
+        {
+          "text": "address of shop"
+        },
+        {
+          "text": "how to reach your store"
+        },
+        {
+          "text": "location of store"
+        },
+        {
+          "text": "How to reach shop"
+        }
+      ],
+      "description": "Gives information about the store's location"
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Night"
+        },
+        {
+          "text": "Oye"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "Good Evening"
+        }
+      ],
+      "description": "Greets the user"
+    },
+    {
+      "intent": "Store_timings",
+      "examples": [
+        {
+          "text": "Timings of store?"
+        },
+        {
+          "text": "open"
+        },
+        {
+          "text": "timings"
+        },
+        {
+          "text": "What are the hours of store?"
+        },
+        {
+          "text": "When does shop close?"
+        },
+        {
+          "text": "When does shop open?"
+        },
+        {
+          "text": "open and close timings"
+        }
+      ],
+      "description": "Tells the user about the timings of store"
+    },
+    {
+      "intent": "Help",
+      "examples": [
+        {
+          "text": "What will helpdesk assist?"
+        },
+        {
+          "text": "What will chat bot assist?"
+        },
+        {
+          "text": "What can I ask?"
+        },
+        {
+          "text": "help?"
+        }
+      ],
+      "description": "Describes what user can do with this chatbot"
+    },
+    {
+      "intent": "Define_use",
+      "examples": [
+        {
+          "text": "What can you do?"
+        },
+        {
+          "text": "What is chatbot for?"
+        },
+        {
+          "text": "What help desk for?"
+        },
+        {
+          "text": "What does helpdesk mean?"
+        },
+        {
+          "text": "helpdesk?"
+        },
+        {
+          "text": "What's use of chatbot?"
+        },
+        {
+          "text": "Who are you?"
+        },
+        {
+          "text": "What can chatbot do?"
+        },
+        {
+          "text": "What can help desk do?"
+        }
+      ],
+      "description": "Defines the use of this help desk"
+    },
+    {
+      "intent": "manual",
+      "examples": [
+        {
+          "text": "How does thermostat work?"
+        },
+        {
+          "text": "How does heater work?"
+        },
+        {
+          "text": "how heat pump works?"
+        },
+        {
+          "text": "How to turn on furnace"
+        },
+        {
+          "text": "How to turn on heater?"
+        },
+        {
+          "text": "How does furnace work?"
+        }
+      ],
+      "description": "Displays suitable manual content by Discovery"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Greetings",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "definition",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "kfc",
+          "synonyms": [
+            "KFC",
+            "store",
+            "food cahin"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Thank_You",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "branchHyd",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "L.B.Nagar",
+          "synonyms": [
+            "LBNagar",
+            "LBNgr",
+            "l.b.nagar",
+            "L.B.Ngr",
+            "L.B.nager"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ECIL",
+          "synonyms": [
+            "E.C.I.L",
+            "asrao nagar",
+            "A.S.Rao Nagar",
+            "a s rao ngr",
+            "ASRao ngr"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "branchBang",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Majestic",
+          "synonyms": [
+            "Majesty",
+            "maajest",
+            "majest",
+            "majastic",
+            "majast"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Maruthahalli",
+          "synonyms": [
+            "marthahali",
+            "marthali",
+            "mrthli",
+            "maaruthalli"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/web/savithrubibi%40gmail.com_dev/default/disco-act.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Karn",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Even for weekdays, till 11:59 PM"
+              },
+              {
+                "text": "Mon-Sat, 10:00 AM to 11:59 PM"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1589280281111",
+      "dialog_node": "node_10_1589281279247",
+      "previous_sibling": "node_10_1589281170559"
+    },
+    {
+      "type": "standard",
+      "title": "Hyd",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Even on saturday and sunday, closes by 11:00 PM"
+              },
+              {
+                "text": "Mon-Sun, 10:00 AM to 11:00 PM"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1589280281111",
+      "conditions": "@branchHyd",
+      "dialog_node": "node_10_1589281170559"
+    },
+    {
+      "type": "standard",
+      "title": "Hyderabad",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Opposite Malabar Jewels,ECIL"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1589281785567",
+      "conditions": "@branchHyd:ECIL",
+      "dialog_node": "node_9_1589281933853",
+      "previous_sibling": "node_8_1589281874345"
+    },
+    {
+      "type": "standard",
+      "title": "Hyderabad",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Opposite Fruit Market, LB NAGAR"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1589281785567",
+      "conditions": "@branchHyd:(L.B.Nagar)",
+      "dialog_node": "node_8_1589281874345"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1589293334226",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1589293351008",
+      "previous_sibling": "response_7_1589293349374"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " <?$webhook_result_1.passages[0].passage_text?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1589293334226",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_7_1589293349374"
+    },
+    {
+      "type": "standard",
+      "title": "Location",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We are located at Road No.1, J Hill, Bangalore"
+              },
+              {
+                "text": "Now available at Road No.1, J Hill, Bangalore"
+              },
+              {
+                "text": "Find us at Road No.1, J Hill, Bangalore"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Store_location",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1589281785567",
+      "previous_sibling": "node_2_1589646401637"
+    },
+    {
+      "type": "standard",
+      "title": "help",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ask me about store location, timings, book an appointment and info about our products like heater, furnace, heat pump.....etc "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Help",
+      "dialog_node": "node_10_1589646913643",
+      "previous_sibling": "node_7_1589647082713"
+    },
+    {
+      "type": "standard",
+      "title": "manual",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#manual",
+      "dialog_node": "node_4_1589293334226",
+      "previous_sibling": "node_3_1589280281111"
+    },
+    {
+      "type": "standard",
+      "title": "Timings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "During weekdays, 10:00 AM to 10:00 PM and during weekends,  10:00 AM to 8:00 PM"
+              },
+              {
+                "text": "Mon-Fri,10:00 AM to 10:00 PM and Sat & Sun till 8:00 PM"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Store_timings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1589280281111",
+      "previous_sibling": "node_1_1589281785567"
+    },
+    {
+      "type": "standard",
+      "title": "Appointment",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! We accepted your request. Our agent will contact you soon."
+              },
+              {
+                "text": "Appointment Booked! Our agent calls you with in few hours"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Book_appointment",
+      "dialog_node": "node_2_1589646401637",
+      "previous_sibling": "node_10_1589279664034"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              },
+              {
+                "text": "Welcome to Helpdesk! How can I help you?"
+              },
+              {
+                "text": "Hey! Welcome back. How can I help you?"
+              },
+              {
+                "text": "Hai! I am here to help you."
+              },
+              {
+                "text": "Hey, good to see you."
+              },
+              {
+                "text": "Welcome back!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Greetings",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_10_1589646913643"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It's pleasure to serve you!"
+              },
+              {
+                "text": "Thank you:-)"
+              },
+              {
+                "text": "Thanks! Hope you will reach us soon."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Thank_You",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1589279795047",
+      "previous_sibling": "node_4_1589293334226"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning. Please try again."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1589279795047",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Definition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am an intelligent chat bot. I can provide you info about timings, store location, book appointment, help....... and many moreC"
+              },
+              {
+                "text": "I am Chatbot. I am just like an help desk, I can assist and help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Define_use",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1589279664034",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello!! I am a Chat bot. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "node_7_1589647082713"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
